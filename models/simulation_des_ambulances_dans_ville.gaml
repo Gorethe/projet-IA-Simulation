@@ -12,12 +12,12 @@ model simulation_des_ambulances_dans_ville
 
 global {
 // Chemin des fichiers shapefile
-	file ville_shapefile <- file("C:/Users/ibrahim/Videos/Simulation_ambulances/projet/includes/ville.shp");
-	file habitation_shapefile <- file("C:/Users/ibrahim/Videos/Simulation_ambulances/projet/includes/maison.shp");
-	file hospital_shapefile <- file("C:/Users/ibrahim/Videos/Simulation_ambulances/projet/includes/hopitaux_v.shp");
-	file road_shapefile <- file("C:/Users/ibrahim/Videos/Simulation_ambulances/projet/includes/roads.shp");
-	file control_center_shapefile <- file("C:/Users/ibrahim/Videos/Simulation_ambulances/projet/includes/centre.shp");
-	image_file ambulance_image <- image_file("C:/Users/ibrahim/Videos/Simulation_ambulances/projet/includes/ambulance_1.png");
+	file ville_shapefile <- file("/home/christine/Gama_Workspace/simulation-ambulances-main/includes/ville.shp");
+	file habitation_shapefile <- file("/home/christine/Gama_Workspace/simulation-ambulances-main/includes/maison.shp");
+	file hospital_shapefile <- file("/home/christine/Gama_Workspace/simulation-ambulances-main/includes/hopitaux_v.shp");
+	file road_shapefile <- file("/home/christine/Gama_Workspace/simulation-ambulances-main/includes/roads.shp");
+	file control_center_shapefile <- file("/home/christine/Gama_Workspace/simulation-ambulances-main/includes/centre.shp");
+	image_file ambulance_image <- image_file("/home/christine/Gama_Workspace/simulation-ambulances-main/includes/ambulance_1.png");
 
 	// Définition de l'enveloppe de la simulation
 	geometry shape <- envelope(habitation_shapefile);
